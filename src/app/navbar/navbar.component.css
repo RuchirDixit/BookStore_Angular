@@ -1,0 +1,30 @@
+.spacer {
+    flex: 1 1 auto;        
+}
+
+.toolbar {
+  top: 0px;
+  left: 0px;
+  color: white;
+  background: #A03037 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.toolbarCSS {
+  margin-top: -8px;
+  margin-left: -8px;
+  width: 102%;
+ }
+.example-form {
+  top: 14px;
+  left: 334px;
+  width: 490px;
+  height: 33px;
+  background: #FCFCFC 0% 0% no-repeat padding-box;
+  border-radius: 3px;
+  opacity: 1;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
