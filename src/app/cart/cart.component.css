@@ -19,4 +19,23 @@ img {
     padding: 5px;
     width: 150px;
     height: 200px;
+    margin-top: -40px;
+    margin-bottom: 30px;
+  }
+  mat-card-content {
+   margin-left: 370px;
+  }
+
+  mat-card-header {
+    margin-left: 350px;
+    margin-top: -200px;
+  }
+
+  mat-card {
+    padding: 40px;
+  }
+
+ button {
+    margin-left: 800px;
+    margin-top: -50%;
   }

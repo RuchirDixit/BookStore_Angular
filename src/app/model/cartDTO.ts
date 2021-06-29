@@ -1,4 +1,3 @@
-export class cartDTO {
+export class CartDTO {
     bookId: number = 0;
-    quantity : number  = 0;
 }

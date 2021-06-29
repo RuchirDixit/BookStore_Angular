@@ -13,18 +13,20 @@
               By {{book.author}}
             </p>
             <p>
-               <b>Price:{{book.price}}</b>
+               <b>Rs. {{book.price}}</b>
             </p>
-            <a mat-button (click)="add()">
+            <a mat-button (click)="add(book.bookId)">
                 <mat-icon>add</mat-icon>
               </a>
-              <input type="text" [value]="quantity" />
-              <a mat-button (click)="remove()">
+              <input type="text" [value]="book.quantity" />
+              <a mat-button (click)="remove(book.bookId)">
                 <mat-icon>remove</mat-icon>
               </a>
+              <button mat-flat-button (click)="removeFromCart(book.bookId)">Remove</button>
           </mat-card-content>
+          <button mat-flat-button color="primary" (click)="placeOrder()">Place Order</button>
         </mat-card>
       </div>
     </div>
   </div>
-  <app-customerdetails></app-customerdetails>
+  <app-customerdetails *ngIf="showCustomerDetails"></app-customerdetails>

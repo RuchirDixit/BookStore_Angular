@@ -66,7 +66,18 @@
             </mat-error>
           </mat-form-field>
           </div>
-        <button mat-flat-button color="primary">Continue</button>
+          <label for="gender">Type:</label>
+            <div>
+              <input id="home" type="radio" value="Home" name="type" formControlName="type">
+              <label for="male">Home</label>
+              &nbsp;&nbsp;&nbsp;
+              <input id="work" type="radio" value="Work" name="type" formControlName="type">
+              <label for="female">Work</label>
+              &nbsp;&nbsp;&nbsp;
+              <input id="other" type="radio" value="Other" name="type" formControlName="type">
+              <label for="female">Other</label>
+           </div> <br>
+        <button mat-flat-button color="primary" (click)="checkout()">Checkout</button>
       </form>
     </mat-card-content>
   </mat-card>

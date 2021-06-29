@@ -3,7 +3,7 @@ import { BookserviceService } from '../bookservice.service';
 import { Book } from '../model/book';
 import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
 import { CartService } from '../services/cart.service';
-import { cartDTO } from '../model/cartDTO';
+import { CartDTO } from '../model/CartDTO';
 @Component({
   selector: 'app-booklist',
   templateUrl: './booklist.component.html',
@@ -25,9 +25,8 @@ sanitizeImageUrl(imageUrl: string): SafeUrl {
 }
 
 addItemToBag(id:number){
-  var dto = new cartDTO();
+  var dto = new CartDTO();
   dto.bookId = id;
-  dto.quantity = 2;
   this.cartService.addToCart(dto).subscribe(response => {
     console.log(response);   
   });
