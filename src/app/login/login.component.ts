@@ -33,11 +33,15 @@ export class LoginComponent implements OnInit {
   onLogin() {
     this.loginService.checkLogin(this.loginForm.value.email,this.loginForm.value.password).subscribe(data => 
     {
-        this.tempArr.push(data)
-        for(var i of this.tempArr){  
-          localStorage.setItem("ACCESS_TOKEN",i.token)
-          this.router.navigateByUrl('/home')
-        }
+      if(String((data as any).statusCode == 200)){
+        localStorage.setItem("ACCESS_TOKEN",String((data as any).token))
+        this.router.navigateByUrl('/home')
+      }
+        // this.tempArr.push(data)
+        // for(var i of this.tempArr){  
+        //   localStorage.setItem("ACCESS_TOKEN",i.token)
+        //   this.router.navigateByUrl('/home')
+        // }
      },error => {
         this.userError = true
      }

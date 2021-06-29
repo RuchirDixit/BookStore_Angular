@@ -1,7 +1,5 @@
-import { LocationChangeEvent } from "@angular/common";
-
 export class Book {
-    id : String = "";
+    id : number = 0;
 	bookName : String = "";
     author : String = "";
     description : String = "";

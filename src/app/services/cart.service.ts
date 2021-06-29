@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { cartDTO } from '../model/cartDTO';
 
 @Injectable({
   providedIn: 'root'
@@ -13,14 +14,9 @@ export class CartService {
   }
 
 
-  public addToCart(id:any) {
-  
-    let cartObj = {
-      "bookId" : id,
-      "quantity" : 2
-    }
+  public addToCart(cart : cartDTO) {
+    
     var token = localStorage.getItem("ACCESS_TOKEN")
-    debugger
-    return this.http.post("http://localhost:8080/cart/addToCart/"+token,cartObj,this.headeroption)
+    return this.http.post("http://localhost:8080/cart/addToCart/"+token,cart,this.headeroption)
   }
 }

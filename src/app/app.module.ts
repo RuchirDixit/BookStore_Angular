@@ -4,6 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import {CdkAccordionModule} from '@angular/cdk/accordion';
 import {MatInputModule} from '@angular/material/input';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -14,14 +15,19 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
-import { LoginComponent } from './login/login.component'
+import { LoginComponent } from './login/login.component';
+import { CartComponent } from './cart/cart.component';
+import { CustomerdetailsComponent } from './customerdetails/customerdetails.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     BooklistComponent,
-    LoginComponent
+    LoginComponent,
+    CartComponent,
+    CustomerdetailsComponent
   ],
   imports: [
     BrowserModule,
@@ -34,6 +40,7 @@ import { LoginComponent } from './login/login.component'
     MatCardModule,
     MatGridListModule,
     MatInputModule,
+    CdkAccordionModule,
     BrowserAnimationsModule,
     MatIconModule
   ],

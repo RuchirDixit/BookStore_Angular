@@ -11,6 +11,7 @@ export class BookserviceService {
   constructor(private http: HttpClient) { }
 
   public findAll() {
-    return this.http.get<Book[]>("http://localhost:8080/book/getBooks/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo4fQ.PovrO1SlYXAfjyAmOFAW2GN7_mzymacPu0V47Il29_4");
+    let token = localStorage.getItem("ACCESS_TOKEN")
+    return this.http.get<Book[]>("http://localhost:8080/book/getBooks/"+token);
   }
 }
