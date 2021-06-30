@@ -22,9 +22,9 @@
               <a mat-button (click)="remove(book.bookId)">
                 <mat-icon>remove</mat-icon>
               </a>
-              <button mat-flat-button (click)="removeFromCart(book.bookId)">Remove</button>
+              <button mat-flat-button class="removeBtn" (click)="removeFromCart(book.bookId)">Remove</button>
           </mat-card-content>
-          <button mat-flat-button color="primary" (click)="placeOrder()">Place Order</button>
+          <button mat-flat-button class="orderBtn" color="primary" (click)="placeOrder()">Place Order</button>
         </mat-card>
       </div>
     </div>

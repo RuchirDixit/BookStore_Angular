@@ -40,7 +40,6 @@ import { OrdersuccessComponent } from './ordersuccess/ordersuccess.component';
     MatCardModule,
     MatGridListModule,
     MatInputModule,
-    //CdkAccordionModule,
     BrowserAnimationsModule,
     MatIconModule
   ],

@@ -6,14 +6,15 @@
       </div>
       <form name="loginForm" [formGroup]="loginForm">
         <div class="example-container">
-            <mat-form-field class="full-width" appearance="outline">
+            <mat-form-field class="example-full-width" appearance="outline">
               <mat-label>Name</mat-label>
               <input formControlName="name" matInput required />
           <mat-error *ngIf="!loginForm.controls['name'].valid">
               Name is required
             </mat-error>
           </mat-form-field>
-            <mat-form-field class="full-width" appearance="outline">
+          &nbsp;&nbsp;&nbsp;
+            <mat-form-field class="example-full-width" appearance="outline">
               <mat-label>Phone number</mat-label>
               <input formControlName="phoneNumber" matInput required />
           <mat-error *ngIf="!loginForm.controls['phoneNumber'].valid">
@@ -22,16 +23,15 @@
           </mat-form-field>
           </div>
           <div>
-            <mat-form-field class="full-width" appearance="outline">
+            <mat-form-field class="example-full-width" appearance="outline">
               <mat-label>Pincode</mat-label>
               <input formControlName="pincode" matInput required />
           <mat-error *ngIf="!loginForm.controls['pincode'].valid">
               Pincode is required
             </mat-error>
           </mat-form-field>
-          </div>
-          <div>
-            <mat-form-field class="full-width" appearance="outline">
+          &nbsp;&nbsp;&nbsp;
+            <mat-form-field class="example-full-width" appearance="outline">
               <mat-label>Locality</mat-label>
               <input formControlName="locality" matInput required />
           <mat-error *ngIf="!loginForm.controls['locality'].valid">
@@ -42,23 +42,22 @@
           <div>
             <mat-form-field class="full-width" appearance="outline">
               <mat-label>Address</mat-label>
-              <input formControlName="address" matInput required />
+              <textarea formControlName="address" matInput required ></textarea>
           <mat-error *ngIf="!loginForm.controls['address'].valid">
               Address is required
             </mat-error>
           </mat-form-field>
           </div>
           <div>
-            <mat-form-field class="full-width" appearance="outline">
+            <mat-form-field class="example-full-width" appearance="outline">
               <mat-label>City/Town</mat-label>
               <input formControlName="city" matInput required />
           <mat-error *ngIf="!loginForm.controls['city'].valid">
               City/Town is required
             </mat-error>
           </mat-form-field>
-          </div>
-          <div>
-            <mat-form-field class="full-width" appearance="outline">
+          &nbsp;&nbsp;&nbsp;
+            <mat-form-field class="example-full-width" appearance="outline">
               <mat-label>LandMark</mat-label>
               <input formControlName="landmark" matInput required />
           <mat-error *ngIf="!loginForm.controls['landmark'].valid">

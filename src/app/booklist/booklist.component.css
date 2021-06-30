@@ -3,7 +3,7 @@ mat-toolbar {
 }
 
 .content {
-    padding: 16px;
+    padding: 50px;
 }
 
 .content > mat-card {
